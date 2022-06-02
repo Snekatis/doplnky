@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.template_index {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #b8b8b8;
+  display: flex;
+  justify-content: center;
+}
+.template_index.rtl {
+  direction: rtl;
+}
+.template_index.ltr {
+  direction: ltr;
+}
+.template_index .btnEdit,
+.template_index .btnRemove,
+.template_index .placeholder-label {
+  direction: ltr !important;
+}
+.template_index .container {
+  max-width: 1075px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 25px 0;
+  padding: 0 0 100px;
+  border-radius: 5px;
+}
+.template_index .container .container__header {
+  width: 100%;
+}
+.template_index .container .container__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.template_index .container .container__wrapper .container__wrapper--main {
+  width: 64.977%;
+}
+.template_index .container .container__wrapper .container__wrapper--main.full {
+  width: 90%;
+  margin: auto;
+}
+.template_index .container .container__wrapper .container__wrapper--sidebar {
+  width: 100%;
+  max-width: 344px;
+}
+.template_index .container .container__wrapper--comments {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 50px;
+}
+.template_index .container .container__wrapper--comments.full {
+  max-width: none;
+  width: 90%;
+  margin: 50px auto auto;
+}
+@media only screen and (max-width: 768px) {
+  .mobile-off {
+    display: none;
+  }
+  .template_index .container {
+    padding: 0 0 100px;
+    margin: 0;
+  }
+  .template_index .container .container__wrapper .container__wrapper--main {
+    width: 100%;
+    max-width: 658px;
+  }
+  .template_index .container .container__wrapper .container__wrapper--sidebar {
+    display: none;
+  }
+  .template_index .container .container__wrapper--comments {
+    padding: 0;
+  }
+}
+.ql-container,
+.ql-editor {
+  height: auto !important;
+}
+#exitData {
+  display: none;
+}
+#ExitDiv {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  margin: auto;
+  width: 700px;
+  height: 154px;
+  z-index: 1000;
+  cursor: default;
+  pointer-events: none;
+}
+#ExitDiv * {
+  box-sizing: initial !important;
+}
+#exitdiv_text1 {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 400px;
+  height: 93px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 36px;
+  color: #6e0606;
+  font-weight: bold;
+  font-stretch: condensed;
+}
+#exitdiv_text2 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 300px;
+  height: 93px;
+  font-family: Arial, sans-serif;
+  font-size: 56px;
+  color: #6e0606;
+  font-weight: bold;
+}
+#exitdiv_text3 {
+  position: absolute;
+  left: 225px;
+  top: 100px;
+  width: 230px;
+  height: 100px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  color: #04447c;
+}
+#left-wrapper {
+  position: relative;
+  width: 475px;
+  height: 100px;
+  float: left;
+}
+#left-wrapper #popup-1-top {
+  position: relative;
+  padding: 25px 0 0 35px;
+  width: 217px;
+  height: 61px;
+}
+#left-wrapper #popup-1-top #popup1-header-1 {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  color: #6f77c6;
+}
+#left-wrapper #popup-1-top #popup1-header-2 {
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 7px;
+  color: #353234;
+}
+#left-wrapper #exit_div_alert1 {
+  width: 147px;
+  margin-top: -25px;
+  padding: 0 35px 5px 35px;
+  background: url("../img/popup_1_middle.gif.html") repeat-y 0 0;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  color: #353234;
+}
+#left-wrapper #popup-1-bottom {
+  width: 217px;
+  height: 55px;
+  background: url("../img/popup_1_bottom.gif.html") no-repeat;
+}
+#left-wrapper #popup-1-bottom .texts {
+  margin-left: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  color: #151c55;
+}
+#left-wrapper #popup-1-bottom .text-1 {
+  padding-top: 4px;
+}
+#left-wrapper #popup-1-bottom .text-2 {
+  position: relative;
+  padding-top: 8px;
+}
+#left-wrapper #popup-1-bottom .text-2 .arrow {
+  position: absolute;
+  bottom: -12px;
+  right: -49px;
+  width: 247px;
+  height: 64px;
+  background: url("../img/arrow_1.png.html") no-repeat 0 0;
+}
+#left-wrapper #popup-3 {
+  position: relative;
+  width: 418px;
+  height: 96px;
+  float: right;
+  background: url("../img/popup_3.gif.html") no-repeat;
+  font-family: Arial, sans-serif;
+}
+#left-wrapper #popup-3 .texts {
+  font-size: 9px;
+  color: #000;
+}
+#left-wrapper #popup-3 .text-1 {
+  padding: 33px 15px 0px 42px;
+}
+#left-wrapper #popup-3 .text-2,
+#left-wrapper #popup-3 .text-3 {
+  position: absolute;
+  bottom: 19px;
+  left: 124px;
+  width: 76px;
+  height: 15px;
+  font-size: 9px;
+  text-align: center;
+  color: #151c55;
+}
+#left-wrapper #popup-3 .text-3 {
+  left: 208px;
+}
+#left-wrapper #popup-3 .text-3 .arrow {
+  position: absolute;
+  bottom: -7px;
+  right: -14px;
+  width: 101px;
+  height: 137px;
+  background: url("../img/arrow_2.png.html") no-repeat 0 0;
+}
+#right-wrapper {
+  position: relative;
+  width: 225px;
+  margin-top: 36px;
+  float: right;
+}
+#right-wrapper #popup-2-top {
+  width: 227px;
+  height: 27px;
+  background: url("../img/popup_2_top.gif.html") no-repeat;
+}
+#right-wrapper #exit_div_alert3 {
+  width: calc(191px);
+  padding: 10px 18px;
+  background: url("../img/popup_2_middle.gif.html") repeat-y;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #353234;
+}
+#right-wrapper #popup-2-bottom {
+  width: 227px;
+  height: 42px;
+  background: url("../img/popup_2_bottom.gif.html") no-repeat;
+}
+#right-wrapper #popup-2-bottom .texts {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  text-align: center;
+  color: #151c55;
+}
+#right-wrapper #popup-2-bottom .text-1,
+#right-wrapper #popup-2-bottom .text-2 {
+  bottom: 21px;
+  left: 27px;
+  width: 74px;
+  height: 15px;
+}
+#right-wrapper #popup-2-bottom .text-2 {
+  bottom: 21px;
+  left: 105px;
+  width: 100px;
+}
+#right-wrapper #popup-2-bottom .text-2 .popup {
+  position: absolute;
+  bottom: -10px;
+  right: -7px;
+  width: 280px;
+  height: 133px;
+  background: transparent url("../img/arrow_3.png.html") no-repeat 0 0;
+}
